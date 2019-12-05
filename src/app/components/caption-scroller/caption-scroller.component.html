@@ -1,0 +1,20 @@
+<div class="content-container">
+  <ng-container *ngFor="let content of captionedContent">
+    <img *ngIf="!content.video; else video" class="content content--img"
+      [class.content--active]="content.src === currentContent.src" [src]="content.src"
+      [@fade]="content.src === currentContent.src ? 'active': 'inactive'">
+    <ng-template #video>
+      <video class="content content--video" [class.content--active]="content.src === currentContent.src"
+        [src]="content.src" [poster]="content.poster" preload="auto" autoplay="" loop="" playsinline="true"
+        [muted]="true" [@fade]="content.src === currentContent.src ? 'active': 'inactive'"></video>
+    </ng-template>
+  </ng-container>
+</div>
+<div class="text-container">
+  <div *ngFor="let content of captionedContent" class="caption-wrapper"
+    [class.caption-wrapper--placeholder]="!content.caption.length">
+    <div class="caption-inner">
+      <p class="caption">{{content.caption}}</p>
+    </div>
+  </div>
+</div>
