@@ -68,8 +68,8 @@ export class CaptionScrollerComponent implements OnInit, AfterViewInit {
       });
   }
 
-  @HostListener('window:resize', ['$event'])
-  private resize() {
+  @HostListener('window:resize')
+  resize() {
     this.scroller.resize();
   }
 
