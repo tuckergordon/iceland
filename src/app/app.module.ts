@@ -16,7 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     TitleSectionComponent,
     TextVideoComponent,
     CaptionScrollerComponent,
-    StorytellingComponent
+    StorytellingComponent,
   ],
   imports: [
     BrowserModule,
