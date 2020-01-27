@@ -58,7 +58,7 @@ export class StorytellingComponent implements OnInit {
     },
     {
       src: 'assets/images/blue_lagoon.jpeg',
-      caption: 'The area around the resort felt other-wordly: craggy rocks surrounding water so piercingly-blue that it almost seemed to glow in the rapidly fading light, all covered in a fog slowly marching across the warm waters below.'
+      caption: 'The area around the resort felt other-worldly: craggy rocks surrounding water so piercingly-blue that it almost seemed to glow in the rapidly fading light, all covered in a fog slowly marching across the warm waters below.'
     },
     {
       src: 'assets/images/blue_lagoon.jpeg',
@@ -185,7 +185,7 @@ export class StorytellingComponent implements OnInit {
     },
     {
       src: 'assets/images/skogafoss2.jpeg',
-      caption: 'I know it’s hyperbolic, but this was one of the most beautiful places I have ever been.',
+      caption: 'Hyperbole aside, this was one of the most beautiful places I have ever been.',
     },
     {
       src: 'assets/images/skogafoss3.jpeg',
