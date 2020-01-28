@@ -18,13 +18,14 @@
   </ng-container>
 </div>
 <div class="text-container">
-  <div *ngFor="let content of captionedContent" 
-    [class]="'caption-wrapper caption-wrapper--' + scrollerName"
-    [class.caption-wrapper--placeholder]="!content.caption.length"
-    [class.caption-wrapper--extra]="content.caption.length === 0"
-    [class.caption-wrapper--split]="content.split">
-    <div class="caption-inner">
-      <p class="caption">{{content.caption}}</p>
+  <a [href]="content.src" *ngFor="let content of captionedContent">
+    <div [class]="'caption-wrapper caption-wrapper--' + scrollerName"
+      [class.caption-wrapper--placeholder]="!content.caption.length"
+      [class.caption-wrapper--extra]="content.caption.length === 0"
+      [class.caption-wrapper--split]="content.split">
+      <div class="caption-inner">
+        <p class="caption">{{content.caption}}</p>
+      </div>
     </div>
-  </div>
+  </a>
 </div>
